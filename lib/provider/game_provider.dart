@@ -36,6 +36,8 @@ class GameProvider extends ChangeNotifier {
     startTimer();
   }
 
+  // timer
+
   void startTimer() {
     _timer?.cancel();
     _remainingTime = 30;
@@ -55,6 +57,8 @@ class GameProvider extends ChangeNotifier {
     startTimer();
     notifyListeners();
   }
+
+  
 
   void placeMarble(BuildContext context, int row, int col) {
     if (board[row][col] == null &&

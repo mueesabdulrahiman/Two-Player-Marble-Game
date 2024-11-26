@@ -14,7 +14,8 @@ class GameHistoryScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Game History'),
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
+          icon: const 
+           Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.pop(context);
             gameProvider.resetGame();

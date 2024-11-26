@@ -27,7 +27,7 @@ class GameScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final gameProvider = Provider.of<GameProvider>(context);
     return Scaffold(
-      appBar: AppBar(title: const Text('Orbito Game')),
+      appBar: AppBar(title: const Text('Two-Player Counterclockwise Marble Game')),
       body: Column(
         children: [
           Text(gameProvider.isPlayerOneTurn
